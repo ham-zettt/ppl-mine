@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sistem Sekolah Terintegrasi</title>
+    <title>SMPN 71 Kamal</title>
     @vite('resources/css/app.css')
 </head>
 <body class="font-sans antialiased">
@@ -13,7 +13,7 @@
         <div class="container mx-auto px-4 py-6 flex justify-between items-center">
             <div class="flex items-center space-x-4">
                 <img src="logo.png" alt="Logo" class="h-10">
-                <h1 class="text-xl font-semibold">SMPN 71 Sukamuljo</h1>
+                <h1 class="text-xl font-semibold">SISEK</h1>
             </div>
             <nav class="space-x-8">
                 <a href="#" class="text-gray-700 hover:text-blue-600">Home</a>
@@ -32,12 +32,12 @@
     <!-- Hero Section -->
     <section class="bg-gray-100 py-16">
         <div class="container mx-auto px-4 text-center">
-            <h2 class="text-4xl font-bold text-gray-800 mb-4">Lorem Ipsum dolor <span class="text-blue-600">sit amet.</span></h2>
+            <h2 class="text-4xl font-bold text-gray-800 mb-4">Selamat Datang di <span class="text-blue-600">SMPN 71 Kamal</span></h2>
             <p class="text-lg text-gray-600 mb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
             <a href="#" class="inline-block px-6 py-3 bg-blue-600 text-white font-semibold rounded-full">More info →</a>
         </div>
     </section>
-    
+
 <!-- ACTIVITIES SECTION -->
 <section class="py-16">
     <div class="container mx-auto px-4 text-center">
@@ -73,7 +73,7 @@
         </div>
     </div>
 </section>
-    
+
 <!-- FROM OUR BLOG SECTION -->
 <section class="py-16 bg-gray-100">
     <div class="container mx-auto px-4 text-center">

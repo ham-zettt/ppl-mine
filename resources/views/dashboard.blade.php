@@ -5,167 +5,130 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SMPN 71 Kamal</title>
     @vite('resources/css/app.css')
+    
 </head>
+
 <body class="font-sans antialiased">
 
     <!-- Header -->
     <header class="bg-white shadow">
-        <div class="container mx-auto px-4 py-6 flex justify-between items-center">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
             <div class="flex items-center space-x-4">
-                <img src="logo.png" alt="Logo" class="h-10">
-                <h1 class="text-xl font-semibold">SISEK</h1>
+                <img src="{{ asset('img/logo.png') }}" alt="Logo" class="h-16">
             </div>
             <nav class="space-x-8">
                 <a href="#" class="text-gray-700 hover:text-blue-600">Home</a>
                 <a href="#" class="text-gray-700 hover:text-blue-600">Tentang Kami</a>
-                <a href="#" class="text-gray-700 hover:text-blue-600">Akademik</a>
                 <a href="#" class="text-gray-700 hover:text-blue-600">Perpustakaan</a>
+                <a href="#" class="text-gray-700 hover:text-blue-600">Tenaga Pengajar</a>
                 <a href="#" class="text-gray-700 hover:text-blue-600">Ekstrakurikuler</a>
                 <a href="#" class="text-gray-700 hover:text-blue-600">Contact Us</a>
             </nav>
-            <button class="h-8 w-8 rounded-full bg-gray-300 flex items-center justify-center">
-                <span class="material-icons">account_circle</span>
-            </button>
+            <div class="font-bold">
+                Telp 081939393
+            </div>
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="bg-gray-100 py-16">
-        <div class="container mx-auto px-4 text-center">
-            <h2 class="text-4xl font-bold text-gray-800 mb-4">Selamat Datang di <span class="text-blue-600">SMPN 71 Kamal</span></h2>
-            <p class="text-lg text-gray-600 mb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-            <a href="#" class="inline-block px-6 py-3 bg-blue-600 text-white font-semibold rounded-full">More info →</a>
-        </div>
-    </section>
-
-<!-- ACTIVITIES SECTION -->
-<section class="py-16">
+<!-- Hero Section -->   
+<section class="bg-gray-200 py-16">
     <div class="container mx-auto px-4 text-center">
-        <h3 class="text-3xl font-semibold text-gray-800 mb-8">SOME OF OUR <span class="text-blue-600">ACTIVITIES</span></h3>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <!-- Sport Activity -->
-            <div class="bg-white p-6 rounded-lg shadow-md">
-                <img src="https://via.placeholder.com/150" alt="Sport Activity" class="w-full h-48 object-cover rounded-lg mb-4">
-                <div class="bg-blue-500 rounded-full p-4 inline-block mb-4">
-                    <span class="material-icons text-white text-3xl">sports_soccer</span>
+        <h2 class="text-4xl font-bold text-gray-800 mb-4">Selamat Datang di <span class="text-blue-600">SMPN 71 Kamal</span></h2>
+        <p class="text-lg text-gray-600 mb-6">Tempat kami membentuk generasi yang berprestasi, berkarakter, dan siap menghadapi masa depan. Di SMPN 71 Kamal, kami berkomitmen untuk memberikan pendidikan berkualitas yang berlandaskan nilai-nilai moral dan etika.</p>
+        <a href="#profil-sekolah" class="inline-block px-6 py-3 bg-blue-600 text-white font-semibold rounded-md">Lihat Selengkapnya →</a>
+    </div>
+</section>
+
+<!-- Main Section with Background and Overlay -->
+
+<!-- Main Section with Background and Overlay -->
+<section class="relative bg-cover bg-center py-16" style="background-image: url({{ asset('img/sekolah.jpg') }});">
+    <div class="absolute inset-0 bg-black opacity-50"></div>
+    
+    <div class="relative container mx-auto px-4 flex flex-col md:flex-row items-center text-white">
+        <!-- Left Section: Heading and Description -->
+        <div class="w-full md:w-1/2 text-center md:text-left mb-8 md:mb-0">
+            <h1 class="text-4xl font-bold">SMPN 71 Kamal</h1>
+            <p class="text-lg mt-4 pr-12">Tempat kami membentuk generasi berprestasi dengan dedikasi dan bimbingan dari tenaga pengajar berpengalaman, fasilitas lengkap, dan lingkungan yang mendukung perkembangan siswa.</p>
+        </div>
+
+        <!-- Right Section: 4 Cards -->
+        <div class="w-full md:w-1/2 grid grid-cols-1 sm:grid-cols-2 gap-8">
+            <!-- Card 1: Perpustakaan -->
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                <img src="{{ asset('img/perpus.jpg') }}" alt="Perpustakaan" class="w-full h-32 object-cover">
+                <div class="p-6">
+                    <h3 class="text-lg font-semibold text-gray-800">Perpustakaan</h3>
+                    <p class="text-gray-600 text-sm mt-2">Koleksi buku lengkap dan nyaman untuk mendukung kegiatan belajar siswa.</p>
+                    <!-- Button -->
+                    <a href="#" class="inline-block mt-4 px-4 py-2 bg-blue-600 text-white rounded-full font-semibold text-sm hover:bg-blue-700 transition">Lihat Selengkapnya →</a>
                 </div>
-                <h4 class="text-xl font-semibold mb-2">Sport</h4>
-                <p class="text-gray-600">Sports are games such as football and other leisure activities which need physical effort and skills.</p>
             </div>
-            <!-- Music Activity -->
-            <div class="bg-white p-6 rounded-lg shadow-md">
-                <img src="https://via.placeholder.com/150" alt="Music Activity" class="w-full h-48 object-cover rounded-lg mb-4">
-                <div class="bg-blue-500 rounded-full p-4 inline-block mb-4">
-                    <span class="material-icons text-white text-3xl">music_note</span>
+
+            <!-- Card 2: Tenaga Pengajar -->
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                <img src="{{ asset('img/tenaga-kerja.jpg') }}" alt="Tenaga Pengajar" class="w-full h-32 object-cover">
+                <div class="p-6">
+                    <h3 class="text-lg font-semibold text-gray-800">Tenaga Pengajar</h3>
+                    <p class="text-gray-600 text-sm mt-2">Guru-guru berpengalaman yang berdedikasi dalam mendidik siswa dengan sepenuh hati.</p>
+                    <!-- Button -->
+                    <a href="#" class="inline-block mt-4 px-4 py-2 bg-blue-600 text-white rounded-full font-semibold text-sm hover:bg-blue-700 transition">Lihat Selengkapnya →</a>
                 </div>
-                <h4 class="text-xl font-semibold mb-2">Music</h4>
-                <p class="text-gray-600">Music is expressed ideas and emotions in significant forms through the elements of rhythm and melody.</p>
             </div>
-            <!-- Painting Activity -->
-            <div class="bg-white p-6 rounded-lg shadow-md">
-                <img src="https://via.placeholder.com/150" alt="Painting Activity" class="w-full h-48 object-cover rounded-lg mb-4">
-                <div class="bg-blue-500 rounded-full p-4 inline-block mb-4">
-                    <span class="material-icons text-white text-3xl">brush</span>
+
+            <!-- Card 3: Prestasi -->
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                <img src="{{ asset('img/prestasi.jpg') }}" alt="Prestasi" class="w-full h-32 object-cover">
+                <div class="p-6">
+                    <h3 class="text-lg font-semibold text-gray-800">Prestasi</h3>
+                    <p class="text-gray-600 text-sm mt-2">Berbagai pencapaian siswa di bidang akademik dan non-akademik.</p>
+                    <!-- Button -->
+                    <a href="#" class="inline-block mt-4 px-4 py-2 bg-blue-600 text-white rounded-full font-semibold text-sm hover:bg-blue-700 transition">Lihat Selengkapnya →</a>
                 </div>
-                <h4 class="text-xl font-semibold mb-2">Painting</h4>
-                <p class="text-gray-600">Painting is the expression or application of human creative skill and imagination in a visual form.</p>
+            </div>  
+
+            <!-- Card 4: Ekstrakulikuler -->
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                <img src="{{ asset('img/ekstra.jpg') }}" alt="Ekstrakulikuler" class="w-full h-32 object-cover">
+                <div class="p-6">
+                    <h3 class="text-lg font-semibold text-gray-800">Ekstrakulikuler</h3>
+                    <p class="text-gray-600 text-sm mt-2">Pilihan kegiatan ekstrakurikuler untuk mengembangkan minat dan bakat siswa.</p>
+                    <!-- Button -->
+                    <a href="#" class="inline-block mt-4 px-4 py-2 bg-blue-600 text-white rounded-full font-semibold text-sm hover:bg-blue-700 transition">Lihat Selengkapnya →</a>
+                </div>
             </div>
         </div>
     </div>
 </section>
-
-<!-- FROM OUR BLOG SECTION -->
+   
+<!-- Tentang Kami Section -->
 <section class="py-16 bg-gray-100">
-    <div class="container mx-auto px-4 text-center">
-        <h3 class="text-3xl font-semibold text-gray-800 mb-8">FROM OUR <span class="text-blue-600">BLOG</span></h3>
+    <div class="container mx-auto px-4">
+        <h2 class="text-4xl font-bold text-center mb-12">Tentang Kami</h2> <!-- Judul yang lebih besar -->
+        
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <!-- Blog Post 1 -->
-            <div class="bg-white p-6 rounded-lg shadow-md">
-                <img src="https://via.placeholder.com/400x300" alt="Blog Image" class="w-full h-48 object-cover rounded-lg mb-4">
-                <h4 class="text-xl font-semibold mb-2">Lorem ipsum dolor sit amet</h4>
-                <p class="text-gray-600 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-                <div class="text-gray-500 text-sm mb-2">September 10, 2021 by Admin</div>
-                <div class="flex items-center text-gray-700">
-                    <span class="material-icons mr-1">chat_bubble</span>
-                    <span>10</span>
-                </div>
+            <!-- Card 1: Visi & Misi -->
+            <div class="bg-white shadow-lg rounded-lg p-8"> <!-- Padding yang lebih besar -->
+                <h3 class="text-2xl font-semibold text-gray-800 mb-4 text-center">Visi & Misi</h3> <!-- Judul yang lebih besar -->
+                <p class="text-gray-600 text-center">Visi kami adalah menjadi lembaga pendidikan unggulan yang menghasilkan generasi yang tidak hanya berprestasi akademik, tetapi juga memiliki karakter yang baik. Misi kami adalah untuk menyediakan pendidikan berkualitas tinggi yang relevan dengan kebutuhan zaman, memfasilitasi pembelajaran yang aktif dan kreatif, serta membangun lingkungan yang mendukung perkembangan sosial dan emosional siswa.</p>
             </div>
-            <!-- Blog Post 2 -->
-            <div class="bg-white p-6 rounded-lg shadow-md">
-                <img src="https://via.placeholder.com/400x300" alt="Blog Image" class="w-full h-48 object-cover rounded-lg mb-4">
-                <h4 class="text-xl font-semibold mb-2">Lorem ipsum dolor sit amet</h4>
-                <p class="text-gray-600 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-                <div class="text-gray-500 text-sm mb-2">September 10, 2021 by Admin</div>
-                <div class="flex items-center text-gray-700">
-                    <span class="material-icons mr-1">chat_bubble</span>
-                    <span>10</span>
-                </div>
+
+            <!-- Card 2: Tujuan -->
+            <div class="bg-white shadow-lg rounded-lg p-8"> <!-- Padding yang lebih besar -->
+                <h3 class="text-2xl font-semibold text-gray-800 mb-4 text-center">Tujuan</h3> <!-- Judul yang lebih besar -->
+                <p class="text-gray-600 text-center">Tujuan utama kami adalah untuk menciptakan sistem pendidikan yang dapat memenuhi kebutuhan dan harapan siswa, orang tua, serta masyarakat. Kami berkomitmen untuk memberikan akses pendidikan yang adil dan berkualitas, membekali siswa dengan pengetahuan dan keterampilan yang dibutuhkan di masa depan, serta mengembangkan potensi individu mereka melalui berbagai kegiatan ekstrakurikuler.</p>
             </div>
-            <!-- Blog Post 3 -->
-            <div class="bg-white p-6 rounded-lg shadow-md">
-                <img src="https://via.placeholder.com/400x300" alt="Blog Image" class="w-full h-48 object-cover rounded-lg mb-4">
-                <h4 class="text-xl font-semibold mb-2">Lorem ipsum dolor sit amet</h4>
-                <p class="text-gray-600 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-                <div class="text-gray-500 text-sm mb-2">September 10, 2021 by Admin</div>
-                <div class="flex items-center text-gray-700">
-                    <span class="material-icons mr-1">chat_bubble</span>
-                    <span>10</span>
-                </div>
+
+            <!-- Card 3: Sejarah -->
+            <div class="bg-white shadow-lg rounded-lg p-8"> <!-- Padding yang lebih besar -->
+                <h3 class="text-2xl font-semibold text-gray-800 mb-4 text-center">Sejarah</h3> <!-- Judul yang lebih besar -->
+                <p class="text-gray-600 text-center">SMPN 71 Kamal didirikan pada tahun 2005 sebagai bagian dari upaya pemerintah untuk meningkatkan akses pendidikan di wilayah Kamal. Sejak awal, kami telah berkomitmen untuk memberikan pendidikan yang berkualitas, dengan fokus pada pengembangan karakter dan kemampuan akademik siswa. Dalam perjalanan kami, kami telah mencapai berbagai prestasi yang membanggakan di tingkat lokal dan nasional, serta terus berinovasi untuk memenuhi tuntutan zaman.</p>
             </div>
-        </div>
-        <div class="mt-8">
-            <a href="#" class="inline-block px-6 py-3 bg-blue-600 text-white font-semibold rounded-full">More Articles →</a>
         </div>
     </div>
 </section>
 
-<!-- MEET OUR STAFF SECTION -->
-<section class="py-16 bg-white">
-    <div class="container mx-auto px-4 text-center">
-        <h3 class="text-3xl font-semibold text-gray-800 mb-8">MEET OUR <span class="text-blue-600">STAFF</span></h3>
-        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-            <!-- Staff Member 1 -->
-            <div class="text-center">
-                <img src="https://via.placeholder.com/150" alt="Staff Image" class="w-32 h-32 object-cover rounded-full mx-auto mb-4">
-                <h4 class="text-xl font-semibold mb-1">Afuwape J. Abiodun</h4>
-                <p class="text-gray-500 mb-4">Headmistress</p>
-                <div class="flex justify-center space-x-4 text-blue-600">
-                    <a href="#" class="text-xl"><i class="fab fa-facebook"></i></a>
-                    <a href="#" class="text-xl"><i class="fab fa-whatsapp"></i></a>
-                    <a href="#" class="text-xl"><i class="fab fa-instagram"></i></a>
-                </div>
-            </div>
-            <!-- Staff Member 2 -->
-            <div class="text-center">
-                <img src="https://via.placeholder.com/150" alt="Staff Image" class="w-32 h-32 object-cover rounded-full mx-auto mb-4">
-                <h4 class="text-xl font-semibold mb-1">Lorem Ipsum Dolor</h4>
-                <p class="text-gray-500 mb-4">Headmaster</p>
-                <div class="flex justify-center space-x-4 text-blue-600">
-                    <a href="#" class="text-xl"><i class="fab fa-facebook"></i></a>
-                    <a href="#" class="text-xl"><i class="fab fa-whatsapp"></i></a>
-                    <a href="#" class="text-xl"><i class="fab fa-instagram"></i></a>
-                </div>
-            </div>
-            <!-- Staff Member 3 -->
-            <div class="text-center">
-                <img src="https://via.placeholder.com/150" alt="Staff Image" class="w-32 h-32 object-cover rounded-full mx-auto mb-4">
-                <h4 class="text-xl font-semibold mb-1">Lorem Ipsum Dolor</h4>
-                <p class="text-gray-500 mb-4">Teacher</p>
-                <div class="flex justify-center space-x-4 text-blue-600">
-                    <a href="#" class="text-xl"><i class="fab fa-facebook"></i></a>
-                    <a href="#" class="text-xl"><i class="fab fa-whatsapp"></i></a>
-                    <a href="#" class="text-xl"><i class="fab fa-instagram"></i></a>
-                </div>
-            </div>
-        </div>
-        <div class="flex justify-center space-x-4 mt-8">
-            <!-- Pagination Dots -->
-            <span class="w-3 h-3 bg-gray-300 rounded-full inline-block"></span>
-            <span class="w-3 h-3 bg-blue-600 rounded-full inline-block"></span>
-            <span class="w-3 h-3 bg-gray-300 rounded-full inline-block"></span>
-        </div>
-    </div>
-</section>
+
 
 <!-- Styles to use icons (e.g., from Font Awesome) -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
